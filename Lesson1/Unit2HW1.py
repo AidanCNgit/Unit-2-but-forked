@@ -24,12 +24,12 @@ def main():
 
 class Restaurant:
 
-    def __init__(self, r_type, c_type):
-        self.r_type = r_type
+    def __init__(self, restaurant_name, c_type):
+        self.restaurant_name = restaurant_name
         self.c_type = c_type
 
     def describe_restaurant(self):
-        print(f"This restaurant is a{self.c_type} {self.r_type} place.")
+        print(f"This restaurant is a{self.c_type} {self.restaurant_name} place.")
     def open_restaurant(self):
         print("This restuarant is open!")
 
