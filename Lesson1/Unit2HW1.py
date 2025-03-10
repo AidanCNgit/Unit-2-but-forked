@@ -1,8 +1,8 @@
 def main():
 
-    mickey_ds = Restaurant("fast food", "n American")
-    kfc = Restaurant("fried chicken", "n American")
-    taco_bell = Restaurant("mexican food", "n American")
+    mickey_ds = Restaurant("Mc Donalds", "American")
+    kfc = Restaurant("Kentucky Fried Chicken", "Fried Chicken")
+    taco_bell = Restaurant("Taco Bell", "Mexican")
 
     john = User("John", "Marton")
     franiselin = User("Franiselin", "James")
@@ -24,14 +24,14 @@ def main():
 
 class Restaurant:
 
-    def __init__(self, restaurant_name, c_type):
+    def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
-        self.c_type = c_type
+        self.cuisine_type = cuisine_type
 
     def describe_restaurant(self):
-        print(f"This restaurant is a{self.c_type} {self.restaurant_name} place.")
+        print(f"Restaurant name: {self.restaurant_name}\nRestaurant cuisine: {self.cuisine_type}")
     def open_restaurant(self):
-        print("This restuarant is open!")
+        print(f"{self.restaurant_name} is open")
 
 class User:
 
@@ -40,9 +40,9 @@ class User:
         self.last_name = last_name
     
     def describe_user(self):
-        print(f"This user's first name is {self.first_name}, their last name is {self.last_name}")
+        print(f"First Name: {self.first_name}\nLast Name: {self.last_name}")
     def greet_user(self):
-        print(f"Wassup {self.first_name} {self.last_name}, welcome")
+        print(f"Welcome {self.first_name}!")
         
 
 main()
